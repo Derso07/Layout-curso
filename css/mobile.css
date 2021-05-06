@@ -110,8 +110,6 @@
         margin: 0 auto;
     }
 
-
-
     .fundo-banner{
         height: 60vh;
     }
@@ -126,6 +124,12 @@
     .publico-alvo{
         display: block;
     }
+
+    
+    .publico-alvo.active{
+    display: block;
+    }
+
 
     .publico-profissional, .publico-estudante{
         border-bottom: 1px solid #555;
