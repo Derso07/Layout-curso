@@ -1,0 +1,60 @@
+header.container{
+    background-color: #eee;
+    position: fixed;
+    z-index: 100;
+}
+
+.logo-curso img{
+    height: 50px;
+    width: 50px;
+}
+
+[data-menu="botao"]{
+    display: none;
+}
+
+.topo{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: static;
+    background-color: #eee;
+}
+
+.topo .logo-curso{
+    display: flex;
+    align-items: center;
+}
+
+.menu-interno{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.menu-interno li a{
+   font-size: 15px;
+   margin-left: 20px;
+   color: #000;
+}
+
+.menu-interno li .voltar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 50px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    background-color: transparent;
+    color: #000;
+}
+
+.menu-interno li .voltar:hover{
+    background-color: #ff0000;
+    transition:background-color 1s;
+    color: #fff;
+}

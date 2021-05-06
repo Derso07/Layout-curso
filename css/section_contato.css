@@ -1,0 +1,86 @@
+.fundo-contato{
+    display: flex;
+    width: 80%;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.contato-titulo{
+    width: 40%;
+}
+
+.contato-titulo h2::after{
+    content: '';
+    display: inline-block;
+    width: 65%;
+    height: 3px;
+    background-color: #555;
+    margin-bottom: 5px;
+    margin-left: 10px;
+}
+
+.contato-form{
+    width: 100%;
+    flex: 1;
+    margin-top: 25px;
+}
+
+.contato-nome, .contato-mensagem{
+    display: flex;
+    flex-direction: column;
+}
+
+.contato-nome label, .contato-email label, .contato-mensagem label {
+    margin-bottom: 10px;
+}
+
+.contato-nome input, .contato-email input, .contato-mensagem input, textarea {
+    margin-bottom: 20px;
+    border: 2px solid #555;
+    padding: 0 5px;
+    height: 30px;
+}
+
+textarea{
+    height: 120px;
+}
+
+.contato-email{
+    display: flex;
+}
+
+.intro-email, .intro-telefone{
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+.intro-email{
+    margin-right: 25px;
+}
+
+.contato-nome input:hover, .contato-email input:hover, .contato-mensagem input:hover, textarea:hover {
+    border-color: #aaa;
+}
+
+.contato-nome input:focus, .contato-email input:focus, .contato-mensagem input:focus, textarea:focus {
+    outline: none;
+    border-color: #aaa;
+}
+
+input.botao{
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: 2px solid #ff0000;
+    background-color: transparent;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+input.botao:hover{
+    background-color: #ff0000;
+    color: #fff;
+    transition: background-color 1s;
+}
+

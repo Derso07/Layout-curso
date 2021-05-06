@@ -1,0 +1,63 @@
+section .titulo-publico{
+    width: 80%;
+    margin: 0 auto; 
+    padding-top: 15px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+section .titulo-publico::after{
+    content: '';
+    display: flex;
+    width: 50px;
+    height: 3px;
+    background-color: #555;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.publico-alvo{
+    display: none;
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.publico-alvo.active{
+    display: flex;
+    animation: initPublico .7s forwards;
+}
+
+@keyframes initPublico{
+    from{
+        opacity: 0;
+        transform: translate3d(0,0,0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,7px,0);
+    }
+}
+
+
+.publico-profissional img, .publico-estudante img,.publico-curioso img{
+    display: flex;
+    width: 70px;
+    height: 70px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    border: 2px solid #ff0000;
+    border-radius: 50%;
+    padding: 7px;
+}
+
+.publico-profissional, .publico-estudante{
+    border-right: 1px solid #555;
+}
+
+.publico-profissional, .publico-estudante, .publico-curioso{
+    flex: 1;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}

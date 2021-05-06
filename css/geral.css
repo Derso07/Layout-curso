@@ -1,0 +1,15 @@
+@import 'footer_rodape.css';
+@import 'section_contato.css';
+@import 'section_arbitros.css';
+@import 'section_ementa.css';
+@import 'section_publico.css';
+@import 'main.css';
+@import 'header.css';
+@import 'reset.css';
+@import 'mobile.css';
+
+.container{
+    width: 100%;
+    display: flex;
+}
+

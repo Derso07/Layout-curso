@@ -1,0 +1,93 @@
+footer{
+    background-color: #000;
+}
+
+.rodape{
+    width: 80%;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodape p{
+    width: 100%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-social{
+    display: flex;
+    align-items: center;
+}
+
+.contato-social img{
+    height: 40px;
+    height: 40px;
+    margin-left: 15px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.retorno{
+    position: fixed;
+    z-index: 2000;
+    height: 50px;
+    width: 50px;
+    bottom: 150px;
+    right: 100px;
+    border-radius: 4px;
+    background: rgba(128, 128, 128, .7);
+    display: flex;
+    opacity: 0;
+    animation: botaoDown .5s forwards;
+}
+
+@keyframes botaoDown{
+    from{
+        opacity: 1;
+        transform: translate3d(0,-5px,0);
+    }
+
+    to{
+        opacity: 0;
+        transform: translate3d(0,0,0);
+    }
+}
+
+.retorno a{
+    width: 50px;
+    height: 50px;
+}
+
+.retorno a::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 14px solid transparent;
+    border-right: 14px solid transparent;
+    border-bottom: 14px solid #fff;
+    align-items: center;
+    justify-content: center;
+    margin: auto 11px;
+    cursor: pointer;
+}
+
+.retorno.btn{
+    display: flex;
+    animation: botaoUp .5s forwards;
+}
+
+@keyframes botaoUp{
+    from{
+        opacity: 0;
+        transform: translate3d(0,0,0);
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0,-5px,0);
+    }
+}
+
