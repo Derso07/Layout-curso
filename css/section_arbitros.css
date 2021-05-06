@@ -3,11 +3,11 @@
     margin: 0 auto;
 }
 
-.arbitros h3{
-    margin: 55px 0 25px 0;
+.arbitros h2{
+    margin: 25px 0 25px 0;
 }
 
-.arbitros h3::after{
+.arbitros h2::after{
     content: '';
     display: block;
     width: 50px;
